@@ -50,3 +50,11 @@ Controls
 Project Structure
 
     simulator.py — Contains the core window initialization, mouse event loops, Numba parallel physics kernel, and rendering pipeline.
+Output
+
+## Demo
+
+<video width="640" height="480" controls>
+  <source src="hello.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
