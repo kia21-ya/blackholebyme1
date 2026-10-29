@@ -5,19 +5,19 @@ A real-time, interactive 3D ray-tracing simulation of a Schwarzschild black hole
 ---
 
 ## Features
-* **General Relativity Simulation:** Iteratively traces light ray geodesics through curved spacetime around a central gravitational singularity.
-* **Real-Time Mouse Orbiting:** Click and drag to smoothly orbit the camera around the black hole while keeping it mathematically locked to the center.
-* **Dynamic Zoom:** Use the mouse scroll wheel to seamlessly zoom in and out of the event horizon.
-* **Accretion Disk & Floor Grid:** Features a spinning, Keplerian-velocity accretion disk and a glowing orange spacetime floor grid that warps dramatically over the event horizon.
-* **High-Performance JIT Kernel:** Utilizes Numba (`@njit(parallel=True)`) to execute heavy pixel-by-pixel ray tracing in parallel, bypassing Python's standard execution bottlenecks.
+- **General Relativity Simulation:** Iteratively traces light ray geodesics through curved spacetime around a central gravitational singularity.
+- **Real-Time Mouse Orbiting:** Click and drag to smoothly orbit the camera around the black hole while keeping it mathematically locked to the center.
+- **Dynamic Zoom:** Use the mouse scroll wheel to seamlessly zoom in and out of the event horizon.
+- **Accretion Disk & Floor Grid:** Features a spinning, Keplerian-velocity accretion disk and a glowing orange spacetime floor grid that warps dramatically over the event horizon.
+- **High-Performance JIT Kernel:** Utilizes Numba (`@njit(parallel=True)`) to execute heavy pixel-by-pixel ray tracing in parallel, bypassing Python's standard execution bottlenecks.
 
 ---
 
 ## Tech Stack
-* **Language:** Python 3
-* **Display & Input:** Pygame
-* **Matrix Operations:** NumPy
-* **Performance Acceleration:** Numba (Parallel JIT Compiler)
+- **Language:** Python 3
+- **Display & Input:** Pygame
+- **Matrix Operations:** NumPy
+- **Performance Acceleration:** Numba (Parallel JIT Compiler)
 
 ---
 
@@ -25,14 +25,21 @@ A real-time, interactive 3D ray-tracing simulation of a Schwarzschild black hole
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/kia21-ya/blackholebyme1
+   git clone [https://github.com/kia21-ya/blackholebyme1.git](https://github.com/kia21-ya/blackholebyme1.git)
    cd blackholebyme1
-2. to create virtual envirenment
-   python3 -m venv .venv
-   source .venv/bin/activate
 
+    Create and activate a virtual environment:
+    Bash
 
- Running the Simulation
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+    Install dependencies:
+    Bash
+
+    pip install pygame numpy numba
+
+Running the Simulation
 
 To launch the simulator with optimal window rendering (especially on Linux/Wayland environments):
 Bash
@@ -50,11 +57,5 @@ Controls
 Project Structure
 
     simulator.py — Contains the core window initialization, mouse event loops, Numba parallel physics kernel, and rendering pipeline.
-Output
 
-## Demo
-
-<video width="640" height="480" controls>
-  <source src="hello.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Demo
